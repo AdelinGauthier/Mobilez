@@ -10,7 +10,7 @@ class Accueil(models.Model):
     # données pour la page du circuit
     description = models.TextField(verbose_name="Description générale")
     map_url_data = models.TextField(validators=[URLValidator()])
-
+    # , path="/img"
     image = models.ImageField(blank=True)
     qr_code = models.ImageField(blank=True)
 
