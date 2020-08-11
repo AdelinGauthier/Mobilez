@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Mobilez.iml" filepath="$PROJECT_DIR$/.idea/Mobilez.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/Mobilez/.idea/Mobilez.iml" filepath="$USER_HOME$/PycharmProjects/Mobilez/.idea/Mobilez.iml" />
     </modules>
   </component>
 </project>
