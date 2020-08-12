@@ -3,30 +3,44 @@
 {% get_providers as socialaccount_providers %}
 
 {% for provider in socialaccount_providers %}
-{% if provider.id == "openid" %}
-    {% for brand in provider.get_brands %}
-{#        ajout "if" pour essayer avec boutons de bootstrap#}
-        {% if band.name == "google" %}
-            <li>
-              <a title="{{brand.name}}"
-                 class="socialaccount_provider {{provider.id}} {{brand.id}}"
-                 href="{% provider_login_url provider.id openid=brand.openid_url process=process %}"
-                 >{{brand.name}}
-              </a>
-            </li>
-            {% elif band.name == "facebook" %}
-                <li>
-                    <a title="{{brand.name}}"
-                        class="socialaccount_provider {{provider.id}} {{brand.id}}"
-                        href="{% provider_login_url provider.id openid=brand.openid_url process=process %}"
-                        >{{brand.name}}
-                    </a>
-                </li>
-        {% endif %}
-    {% endfor %}
-{% endif %}
-<li>
-  <a title="{{provider.name}}" class="socialaccount_provider {{provider.id}}"
-     href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">{{provider.name}}</a>
-</li>
+    {#{% if provider.id == "openid" %}#}
+    {#    {% for brand in provider.get_brands %}#}
+    {#        ajout "if" pour essayer avec boutons de bootstrap#}
+    {#        {% if brand.name == "google" %}#}
+    {#            <li>#}
+    {#              <a title="{{brand.name}}"#}
+    {#                 class="socialaccount_provider {{provider.id}} {{brand.id}}"#}
+    {#                 href="{% provider_login_url provider.id openid=brand.openid_url process=process %}"#}
+    {#                 >{{brand.name}}#}
+    {#              </a>#}
+    {#            </li>#}
+    {#            {% elif brand.name == "facebook" %}#}
+    {#                <li>#}
+    {#                    <a title="{{brand.name}}"#}
+    {#                        class="socialaccount_provider {{provider.id}} {{brand.id}}"#}
+    {#                        href="{% provider_login_url provider.id openid=brand.openid_url process=process %}"#}
+    {#                        >{{brand.name}}#}
+    {#                    </a>#}
+    {#                </li>#}
+    {#        {% endif %}#}
+    {#    {% endfor %}#}
+    {#{% endif %}#}
+    {% if provider.name == "Facebook" %}
+        <li class="d-inline-block">
+             <a id="li-providers" title="{{ provider.name }}" type="button"
+                 class="socialaccount_provider btn btn-social-icon btn-facebook {{ provider.id }}"
+                 href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">
+                 <i class="fa fa-facebook fa-2x"></i>
+             </a>
+        </li>
+    {% endif %}
+    {% if provider.name == "Google"%}
+        <li class="d-inline-block">
+            <a id="li-providers" title="{{provider.name}}" type="button"
+                class="socialaccount_provider btn btn-social-icon btn-google {{provider.id}}"
+                href="{% provider_login_url provider.id process=process scope=scope auth_params=auth_params %}">
+                <i class="fa fa-google fa-2x"></i>
+            </a>
+        </li>
+    {% endif %}
 {% endfor %}

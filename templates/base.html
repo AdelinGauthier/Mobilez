@@ -4,20 +4,31 @@
     {% load static %}
     <title>{% block head_title %}{% endblock %}</title>
 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+{#    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>#}
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ebfba40729.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href={% static "/css/signup.css" %}>
     <link rel="stylesheet" href={% static "/css/index.css" %}>
     <link rel="stylesheet" href="{% static "/css/base.css" %}">
     <link rel="stylesheet" href="{% static "/css/mail.css" %}">
+    <link rel="stylesheet" href="{% static "/css/reinit.css" %}">
+    <link rel="stylesheet" href="{% static "/css/chang.css" %}">
+    <link rel="stylesheet" href="{% static "/css/modifDone.css" %}">
+    <link rel="stylesheet" href="{% static "/css/map.css" %}">
+    <link rel="stylesheet" href="{% static "/css/mdp.css" %}">
+    <link rel="stylesheet" href="{% static "/css/signIn.css" %}">
     <link rel="stylesheet" href="{% static "/css/signOut.css" %}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {#    navbar ------------------------#}
 
-    <nav class="navbar fixed-top navbar-dark bg-dark">
+    <nav class="navbar smart-scroll fixed-top navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'accueil' %}"><b>Mobilez </b>
+            <a class="navbar-brand" href="{% url 'account_login' %}"><b>Mobilez</b></a>
 {#                <img class="img-fluid" alt="Mobilez" src="{% static "/img/MOBILEZ.png" %}" >#}
-            </a>
             {% if messages %}
                 <div class="messages">
                     {% for message in messages %}
@@ -26,7 +37,7 @@
                 </div>
             {% endif %}
             <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
                 </span></button>
             <!-- Collapsible content -->
@@ -35,17 +46,17 @@
                 <ul class="navbar-nav mr-auto">
                     {% if user.is_authenticated %}
                     <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'account_email' %}">Change E-mail<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'account_email' %}">Changer l'adresse e-mail<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Sign Out</a>
+                        <a class="nav-link" href="{% url 'account_logout' %}">Se déconnecter</a>
                     </li>
                     {% else %}
                     <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'account_login' %}">Sign In<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{% url 'account_login' %}">Se connecter<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
+                        <a class="nav-link" href="{% url 'account_signup' %}">S'inscrire</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -63,7 +74,14 @@
         <div class="col">
             {% block content %}
             {% endblock %}
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -75,7 +93,7 @@
 
 <footer id="sticky-footer" class="py-2 fixed-bottom bg-dark text-white-50">
     <div class="container text-center">
-    <small>© 2020 Copyright : Mobilez Louvain-la-Neuve</small>
+    <small>© 2020 Copyright : Mobilez Louvain-la-Neuve</br> Contact : mobilez@gmail.com</small>
     </div>
     <!-- Copyright -->
 </footer>

@@ -1,38 +1,65 @@
-:{% extends "account/base.html" %}
+{% extends "account/base.html" %}
 {% load i18n %}
 {% load account socialaccount %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-{#{% block head_title %}#}
-{#    {% trans "HELLO" %}#}
-{#{% endblock %}#}
 
 {% block content %}
-    <h1>{% trans "1ère page (connexion)" %}</h1>
-    <h3>{% trans "Résumé du projet" %}</h3>
-    {% get_providers as socialaccount_providers %}
-    {# boutons sociaux#}
-    {% if socialaccount_providers %}
-        <div class="socialaccount_ballot">
-          <div class="socialaccount_providers">
-            {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-          </div>
-          <div class="login-or">{% trans 'or' %}</div></br>
-        </div>
-        {% include "socialaccount/snippets/login_extra.html" %}
-    {% else %}
-        <p>{% blocktrans %}If you have not created an account yet, then please
-        <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-    {% endif %}
+    <div class="sign">
 
-    <form class="login" method="POST" action="{% url 'account_login' %}">
-        {% csrf_token %}
-        {{ form.as_p }}
-        {% if redirect_field_value %}
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-        {% endif %}
-        <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-        <button class="primaryAction" type="submit">{% trans "Sign In" %}</button></br>
-        <div class="login-or">{% trans 'or' %}</div></br>
-        <a href="{% url 'account_signup' %}">Sign Up</a>
-    </form>
+    <h1>Bienvenue</h1>
+    <h5>Connectez-vous dés maintenant à Mobilez pour pouvoir profiter d'un interface vous guidant dans différents parcours-nature. Mobilez vous fournit des informations sur le monde végétal qui vous entoure durant votre parcours.</h5>
+
+
+    <div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Connexion</h3>
+                {% get_providers as socialaccount_providers %}
+                    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+                    {% include "socialaccount/snippets/login_extra.html" %}
+
+            </div>
+
+			<div class="card-body">
+{# FORMULAIRE#}
+
+
+				<form class="login" method="POST" action="{% url 'account_login' %}">
+                    {% csrf_token %}
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input id="id_login" type="email" name="login" class="form-control" placeholder="Adresse e-mail" autofocus="autofocus" required="">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input id="id_password" type="password" name="password" class="form-control" placeholder="Mot de passe" required="">
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Connexion" class="btn float-right login_btn primaryAction">
+					</div>
+                    {% if redirect_field_value %}
+                        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                    {% endif %}
+				</form>
+
+			</div>
+
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Pas encore de compte ?&nbsp;<a href="{{ signup_url }}"> Inscription</a>
+				</div>
+				<div class="d-flex justify-content-center button secondaryAction">
+					<a href="{% url 'account_reset_password' %}">Mot de passe oublié ?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    </div>
+    </div>
 {% endblock %}
