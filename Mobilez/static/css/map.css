@@ -1,0 +1,27 @@
+.map {
+    color: white;
+    height: 200%;
+    width: 100%;
+}
+
+.map iframe {
+    height: 60%;
+}
+
+.info {
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 3em;
+    border-radius: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+.info:hover {
+   background-color:rgba(0, 0, 0, 0.7)
+}
+
+.map .info {
+    margin-top: 10%;
+    height: 40%;
+}
+

@@ -1,0 +1,15 @@
+.mdp {
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 3em;
+    border-radius: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+.mdp form {
+    padding: 1em;
+    border: solid white 2px;
+    border-radius: 50px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}

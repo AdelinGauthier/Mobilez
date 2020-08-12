@@ -7,6 +7,17 @@ html, body {
     height: 100%;
 }
 
+.scrolled-down{
+   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up{
+   transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
 
 .accueilTitle{
   color: white;
@@ -19,7 +30,7 @@ html, body {
     text-align: center;
 }
 .col {
-    margin-top: 10em;
+    margin-top: 5em;
 }
 
 .navbar {
@@ -29,7 +40,9 @@ html, body {
     text-align: center;
 }
 
-
+.messages{
+    color: white;
+}
 /*.isAuthenticated{*/
 /*    text-align: center;*/
 /*}*/

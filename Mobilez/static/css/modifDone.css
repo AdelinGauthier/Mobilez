@@ -1,0 +1,12 @@
+.modifDone {
+    background-color:rgba(0, 0, 0, 0.5);
+    padding: 3em;
+    border-radius: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+}
+
+.modifDone p {
+   color: forestgreen;
+}
