@@ -1,0 +1,10 @@
+.mailForm {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3em;
+    border-radius: 50px;
+}
+
+.mailForm:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}

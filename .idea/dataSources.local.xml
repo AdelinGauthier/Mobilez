@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="mobilez-DB@mobilezcluster1-piwai.mongodb.net" uuid="189cfeb9-a1bf-4949-be04-9a1c8e465a71">
+    <data-source name="mobilez-DB@mobilezcluster1-piwai.mongodb.net" uuid="c479c684-4c4f-4520-8dda-dd169b60a7ab">
       <database-info product="Mongo DB" version="4.2.8" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.8.2" dbms="MONGO" exact-version="4.2.8" exact-driver-version="1.8" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <user-name>adelin</user-name>
-      <schema-mapping />
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
     </data-source>
   </component>
 </project>

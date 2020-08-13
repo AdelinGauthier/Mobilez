@@ -1,0 +1,2 @@
+{% load i18n %}
+{% blocktrans %}Le compte a été déconnecté.{% endblocktrans %}

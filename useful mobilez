@@ -1,0 +1,314 @@
+				-------------MISE EN PLACE D'UN PROJET-------------
+
+# Création d'un projet
+django-admin startproject Mobilez
+
+# Création d'une application DANS le dossier du projet (faire "dir")
+python manage.py startapp account
+
+# Migration : crée les tables de la base de données
+python manage.py migrate
+
+# Création d'un super user (admin)
+python manage.py createsuperuser
+
+# Lancement d'un serveur
+python manage.py runserver localhost:8080
+
+				-------------MONGO DB-------------
+
+Dans le rapport : bien expliquer le fonctionnement de la db mongodb : très bien expliqué
+	https://stph.scenari-community.org/contribs/nos/Mongo1/co/presentation.html
+
+Relational concept |  MongoDB equivalent
+	Database 			Database
+	Tables 				Collections
+	Rows 				Documents
+	Index 				Index
+
+Internally MongoDB stores a binary representation of JSON known as BSON. This allows MongoDB to provide data types like decimal that are not defined in the JSON specification. For more information on the BSON spec check out the following URL: http://bsonspec.org.
+
+https://www.youtube.com/watch?v=6-ckzylcB8k - quelques critères à prendre y compris à 35:55 (géo..)
+https://staltz.com/djangoconfi-mongoengine/#/ - même chose
+MONGORUNNER ???
+
+				-------------GESTION D'UN PROJET-------------
+
+Modèle MVT: Le développeur se doit de fournir le modèle, la vue et le template. Une fois cela fait, il suffit d’assigner la vue à une URL précise, et la page est accessible.
+
+Si le template est un fichier HTML classique, un modèle en revanche sera écrit sous la forme d’une classe Python où chaque attribut correspondra à un champ dans la base de données. Django se chargera ensuite de créer la table correspondante dans la base de données, et de faire la liaison entre la base de données et les objets de votre classe. Non seulement, il n’y a plus besoin d’écrire de requêtes pour interagir avec la base de données, mais en plus, le framework propose la représentation de chaque entrée de la table sous forme d’une instance de la classe qui a été écrite. Il suffit donc d’accéder aux attributs de la classe pour accéder aux éléments dans la table et pouvoir les modifier, ce qui est très pratique !
+
+
+
+----------Packages d'authentification à installer plus tard: --------
+	Python Social Auth
+	Django-Defender (app that blocks people from brute forcing login attempts) (sécu)
+	...
+---------------------------------------------------------------------
+
+settings.py : config du projet
+urls.py : rassemble toutes les urls du site et la liste des fonctions à appeler pour chaque URL
+manage.py : l'administration du projet s'effectue par lui, +-= django-admin 
+	pour voir les commandes qu'il contient : python manage.py help
+
+
+---------settings.py----------
+BASE_DIR  peut être utilisée pour référencer des chemins vers des fichiers au sein du projet (ressources CSS, JavaScript, fichiers de test, base de données SQLite...)
+
+
+DEBUG  Le mode de débogage affiche des informations pour déboguer vos applications en cas d’erreur. Ces informations affichées peuvent contenir des données sensibles de votre fichier de configuration. 
+
+
+ALLOWED_HOSTS  permet de renseigner les noms de domaine et adresses IP par lesquels le projet est accessible lorsque le mode DEBUG est désactivé. 
+
+
+DATABASES  dictionnaire containant la configuration de la base de données
+	déjà rempli pour gérer une base de données SQLite
+	Nous conseillons, pour le développement local, de garder cette configuration. L’avantage de SQLite c'est qu'il ne s’agit que d’un simple fichier. Il n’y a donc pas besoin d’installer un service à part
+
+
+USE_I18N, USE_L10N  et USE_TZ  permettent entre autres d’activer l’internationalisation et ainsi d’avoir l’interface en français, la représentation des jours au format jj/mm/aaaa  et d’autres détails
+
+
+------------------------------------
+
+Un projet en django se compose de plusieurs applications, chacune ayant un but bien précis (système d’actualités, galerie photo…). Chaque application contiendra son propre MVT
+= permet la séparation du code et la réutilisation dans d'autres projets de celui-ci :
+
+---Création d'une application Athentication---
+	python manage.py startapp authentication
+
+Un dossier "authentication" a été créé avec les fichiers suivants :
+	admin.py  va permettre de définir ce que souhaitez afficher et modifier comme modèles depuis l’administration de l’application générée automatiquement ;
+
+	apps.py  permet de configurer certaines propriétés de l’application, notamment son nom ;
+
+	models.py contiendra vos modèles ;
+
+	tests.py  permet la création de tests unitaires (un chapitre y est consacré dans la quatrième partie du cours) ;
+
+	Dossier "migrations" permet de retracer l’évolution de vos modèles dans le temps et d’appliquer les modifications à votre base de données
+
+Afin que Django considère le sous-dossier "authentication" comme une app, l'ajouter dans "settings.py" => INSTALLED_APPS
+
+
+				-------------BDD et Django-------------
+
+sqlite3 = un simple fichier, bibliothèque python, rien à installer pr l'utiliser. (PAS EN PROD)
+
+ORM (object-relationnal mapping) = système qui permet d'utiliser la bdd sans écrire les requêtes SQL
+	Lorsque vous créez un modèle dans votre application Django, le framework va automatiquement créer une table adaptée dans la base de données qui permettra d’enregistrer les données relatives au modèle.
+https://openclassrooms.com/fr/courses/1871271-developpez-votre-site-web-avec-le-framework-django/1871728-les-bases-de-donnees-et-django
+
+
+				-------------VUE-------------
+
+Chaque vue se doit d’être associée au minimum à une URL.
+
+Avec Django, une vue est représentée par une FONCTION définie dans le fichier views.py, prenant en paramètre une requête HTTP et renvoyant une réponse HTTP.
+Cette fct va récupérer les données dans le MODELE et appeler le bon TEMPLATE pour générer un rendu HTML.
+
+HttpResponse : classe permettant de retourner une réponse (texte brut ou HTML) depuis une chaîne de caractères. Toutes les fonctions prendront comme premier argument un objet du type HttpRequest. Toutes les vues doivent forcément retourner une instance de HttpResponse, sans quoi Django générera une erreur.
+
+Lorsqu'on crée une fonction dans views.py, il nous faut la faire pointer vers une URL => urls.py.
+
+	Quand un utilisateur appelle une page de votre site, la requête est directement prise en charge par le contrôleur de Django qui va chercher à quelle vue correspond cette URL.
+	En fonction de l’ordre de définition dans le fichier précédent, la première vue qui correspond à l’URL demandée sera appelée, et elle retournera donc la réponse HTML au contrôleur (qui, lui la retournera à l’utilisateur). Si aucune URL ne correspond à un schéma que vous avez défini, alors Django renverra une page d’erreur 404.
+
+	User(GET /blog/signaler-err/) -> Contrôleur(cherche dans urls.py dans la fct "urlpatterns" : url(signaler-erreur, contact)) -> Vue "contact()" -> réponse HTML au Contrôleur -> User
+
+	urlpatterns : association entre URL et vues. : path('url', views.fonction(du views.py))
+
+
+Afin de structurer le code et éviter d'avoir toutes les urls de chaque application dans un seul fichier urls.py, il faut créer son propre fichier urls.py par application.
+
+```py
+	[authentication.urls.py]
+
+from django.urls import path
+from . import views
+
+
+urlpatterns = [
+		path('accueil', views.home),		
+]
+
+	[mobilez.urls.py]
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+	path('admin/', admin.site.urls),
+	path('authentication/', include('authentication.urls')),
+]
+
+```
+
+---------Erreur 404---------
+https://openclassrooms.com/fr/courses/1871271-developpez-votre-site-web-avec-le-framework-django/1871890-votre-premiere-page-grace-aux-vues#/id/r-3158050
+----------------------------
+
+---------Redirection---------
+Lorsque l'utilisateur se co, il est redirigé vers une autre page (Acceuil par ex)
+https://openclassrooms.com/fr/courses/1871271-developpez-votre-site-web-avec-le-framework-django/1871890-votre-premiere-page-grace-aux-vues#/id/r-1875389
+-----------------------------
+
+
+				-------------Templates-------------
+
+ les frameworks web actuels utilisent un moteur de templates. Les templates sont écrits dans un mini-langage de programmation propre à Django qui possède des expressions et des structures de contrôle basiques (if/else, boucle for, etc.) que nous appelons des tags. Le moteur transforme les tags qu’il rencontre dans le fichier par le rendu HTML correspondant. Grâce à ceux-ci, il est possible d’effectuer plusieurs actions algorithmiques : afficher une variable, réaliser des conditions ou des boucles, faire des opérations sur des chaînes de caractères, etc.
+
+ Comment faire pour appeler notre template (page html créée par moi), et générer la réponse à partir de celui-ci ? 
+ ==> La fonction render
+
+ 	Ex : 
+```python
+
+def addition(request, nombre1, nombre2):    
+    total = nombre1 + nombre2
+
+    # Retourne nombre1, nombre2 et la somme des deux au tpl
+    return render(request, 'blog/addition.html', locals())
+
+ ```
+
+ Comme vous pouvez le voir, la fonction render  prend en argument trois paramètres :
+la requête HTTP initiale, que l’on appelle request  par convention, pour rappel ;
+le chemin vers le template adéquat dans un des dossiers de templates donnés dans settings.py  ;
+un dictionnaire reprenant les variables qui seront accessibles dans le template.
+
+Par défaut, Django va chercher les templates aux endroits suivants :
+dans la liste des dossiers fournis du paramètre DIR  de la variable de configuration TEMPLATES  ;
+s’il ne l’a pas trouvé, dans un sous-dossier "templates" de l’application.
+(settings.py)
+
+: on peut choisir un backend (moteur) spécifique gérant les templates et le configurer. Nous allons utiliser celui de Django, mais on va rajouter un dossier dans la configuration
+
+	Créer un dossier à la racine du projet "templates", Django va par ailleurs piocher en priorité dans ce répertoire.
+
+	MAIS il est préférable de de conserver les templates propres à une application dans son dossier, afin de permettre la réutilisabilité de l’application.
+	DONC on va créer un dossier templates dans le répértoire de notre application athentication ET DEDANS, un dossier du meme nom de l'application, donc "authentication" pour éviter les conflits et on AJOUTERA dedans les templates propres à notre application.
+
+	Si vous obtenez l’exception TemplateDoesNotExistspécifiant que blog/date.html  n’existe pas, vérifiez que l’application blog  est bien dans INSTALLED_APPS, dans le fichier settings.py . Django ne va chercher les templates que dans les applications installées ! Il se peut également qu’un redémarrage du serveur de développement soit nécessaire.
+
+	Pour plus de détails sur les différentes façons d'écrire des variables dans du html : 
+https://openclassrooms.com/fr/courses/1871271-developpez-votre-site-web-avec-le-framework-django/1872037-les-templates#/id/r-1871952
+
+
+---------Redirection---------
+Fichiers statiques : CSS, JS,...
+
+Il faut ensuite renseigner ce dossier et lui assigner un préfixe d’URL dans votre settings.py
+	juste après SATIC_URL :
+		STATICFILES_DIRS = (
+    		os.path.join(BASE_DIR, "static"),
+		)
+
+	//La première variable indique l’URL du dossier depuis lequel vos fichiers seront accessibles. La deuxième renseigne le chemin vers ces fichiers sur votre disque dur à partir de la racine du projet. 
+
+	Chaque application peut également avoir son static  afin de conserver les médias propres à chaque application.
+
+	Vous pouvez ainsi inclure l’image de crêpes de l’application blog dans votre template de la façon suivante :
+```py
+{% load static %}	# Permet de charger la librairie de gestion des médias
+<img src="{% static 'blog/crepes.jpg' %}" alt="Mon image" />
+```
+!!!! En réalité, Django ne doit pas s’occuper de servir ces fichiers, c’est à votre serveur web qu’incombe cette tâche. Cependant, en développement, le serveur Django vous permet d’utiliser les fichiers statiques tout de même. Cette méthode n’est pas considérée comme efficace et sécurisée donc elle ne doit pas être utilisée en production !
+Pour le déploiement des fichiers statiques en production, référez-vous à l’annexe consacrée à ce sujet.
+!!!!
+
+-----------------------------
+
+
+				-------------Modèles-------------
+
+Models en python sont des classes qui représentent des tables dans la db
+Permettent de rendre le site dynamique !
+Ce sont des interfaces permettant plus simplement d’accéder à des données dans une base de données et de les mettre à jour.
+
+Créer la table SQL correspondante : https://openclassrooms.com/fr/courses/1871271-developpez-votre-site-web-avec-le-framework-django/1872229-les-modeles#/id/r-2474226
+	Voir commandes "makemigrations", "migrate"
+
+---------Les modèles dans les vues---------
+https://openclassrooms.com/fr/courses/1871271-developpez-votre-site-web-avec-le-framework-django/1872229-les-modeles#/id/r-2474251
+"python manage.py sqlmigrate blog 0001_initial" envoie la structure SQL des tables créées
+
+Bonne explications des modèles : https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django/4631014-decouvrez-larchitecture-mvt
+-----------------------------
+
+				-------------L'administration-------------
+
+Un des gros points forts de Django est que celui-ci génère de façon automatique l’administration en fonction de vos modèles. Celle-ci est personnalisable à souhait en quelques lignes et est très puissante.
+L’administration Django est OPTIONNELLE : il est tout à fait possible de développer un site sans l’utiliser. Pour cette raison, elle est placée dans le module "django.contrib"  contenant un ensemble d’extensions fournies par Django, réutilisables dans n’importe quel projet. Ces modules sont bien pensés et vous permettent d’éviter de réinventer la roue à chaque fois.
+
+Il existe pls modules différents selon les cas de besoin : 
+	notre cas : django.contrib.auth : système d’authentification et de gestion des utilisateurs
+
+Accès à l'administration :
+
+	Import des modules : 
+		Dans settings.py
+			INSTALLED_APPS
+				'django.contrib.auth' déjà présent
+
+		 le module d’administration nécessite aussi l’import de middlewares, normalement inclus par défaut
+
+	python manage.py migrate		SINON une erreur apparaît me disant de migrer les migrations
+
+	Création d'un superuser : python manage.py createsuperuser
+
+	Création d'une URL dans urls.py du projet pour y accéder (créée par défaut : path('admin/', admin.site.urls))
+
+	python manage.py runserver localhost:8080
+
+	http://localhost:8080/admin/
+
+
+	Lors de la création d'un user : 
+		Django impose des règles de validation sur le mot de passe afin d’éviter les mots de passe trop faciles à deviner et forcer. Il est possible d’ajouter ou de supprimer des contraintes en modifiant la liste  AUTH_PASSWORD_VALIDATORS  dans le fichier de configuration.
+
+		
+
+
+							----------EXPRESSIONS REGULIERES Python----------
+https://openclassrooms.com/fr/courses/235344-apprenez-a-programmer-en-python/233857-manipulez-les-expressions-regulieres
+						Les expressions régulières sont un moyen de rechercher, d'isoler ou de remplacer des expressions dans une chaîne.
+						obliger les utilisateurs à écrire ce qu'on veut : 
+							Ex : un num de tél commençant par 0 et comportant 10 chiffres.
+
+						"^mot" : toute chaine de commençant par "mot" ;
+						"mot$" : toute chaine se terminant par "mot" ;
+						"r" au début : = syntaxe des chaines brutes : permet de ne pas écrire le "\" avant les caractères spéciaux  : r'\n'
+
+
+							----------Création d'user----------
+https://github.com/django/django/blob/master/django/contrib/auth/forms.py - expliquer le côté sécurité de ce formulaire mis en place par django (pas besoin de mettre en place la sécu (if...), c'est déjà fait)...
+
+							----------Fonctions utiles----------
+
+
+
+							----------utile----------
+
+kite.com : AI for python completion
+
+
+GIT : 
+
+ex : 
+# add files
+(venv)$ git add .
+
+# commit files
+(venv)$ git commit -m "configured DB settings"
+
+
+
+							----------Dév----------
+
+- login
+- logout
+- inscription
+- VIDEO #24 - rendre les pages inaccéssibles aux utilisateurs non connectés à leurs sessions = protect certain pages to require login
+	création de templates dans lequel : si tu veux la voir, tu dois être connecté (voir suite des vidéos)

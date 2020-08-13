@@ -1,0 +1,43 @@
+section.accueilTitle {
+  color: white;
+}
+
+html, body{
+  height: auto;
+}
+
+.recherche{
+    margin-top:50px;
+}
+
+/*Modals*/
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.list-group-item{
+  margin-bottom: 0.5em;
+}
+
+.listeProche{
+  margin-top: 5em;
+}
+
+.recherche {
+  margin-bottom: 5em;
+}

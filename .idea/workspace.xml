@@ -36,155 +36,11 @@
         <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:Mobilez" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:Mobilez" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="Test Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Mobilez.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mobilez.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/bootstrap-social.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/chang.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/mail.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/map.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/mdp.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/modifDone.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/reinit.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/signIn.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/signOut.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/signup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/MOBILEZ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/Mobilez_Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/parcoursCyclotron.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/parcoursCyclotron_l2nlPUP.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/parcoursJardin.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/parcoursJardin_ADdZU3P.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/parcoursLac.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/parcoursMoulinsart.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/parcoursMoulinsart_6WgCUWJ.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/parcoursSciences.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/img/parcoursSciences_TVslTlh.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/templates/socialaccount/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/migrations/0002_auto_20200527_1650.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/index_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/WiredTigerLog.0000000001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/WiredTigerPreplog.0000000001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/journal/WiredTigerPreplog.0000000002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/templates/map/map.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/map/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydatabase" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parcoursCyclotron.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/account_inactive.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/email.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/email/email_confirmation_message.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/email/email_confirmation_signup_message.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/email/email_confirmation_signup_subject.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/email/email_confirmation_subject.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/email/password_reset_key_message.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/email/password_reset_key_subject.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/email_confirm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/logout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/messages/cannot_delete_primary_email.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/messages/email_confirmation_sent.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/messages/email_confirmed.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/messages/email_deleted.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/messages/logged_in.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/messages/logged_out.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/messages/password_changed.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/messages/password_set.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/messages/primary_email_set.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/messages/unverified_primary_email.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/password_change.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/password_reset.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/password_reset_done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/password_reset_from_key.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/password_reset_from_key_done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/password_set.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/signup_closed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/snippets/already_logged_in.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/verification_sent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/verified_email_required.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/openid/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/openid/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/authentication_error.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/connections.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/login_cancelled.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/messages/account_connected.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/messages/account_connected_other.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/messages/account_connected_updated.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/messages/account_disconnected.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/snippets/login_extra.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/socialaccount/snippets/provider_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tests/test_403_csrf.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/useful mobilez" beforeDir="false" />
-    </list>
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="link to new app" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,11 +49,17 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fyMLuSZrhK2vRmRpssFcI6Y8VK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -206,10 +68,10 @@
     <property name="DatabaseDriversLRU" value="mongo" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/Mobilez" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -225,8 +87,8 @@
       <updated>1597185826099</updated>
       <workItem from="1597185827255" duration="1175000" />
       <workItem from="1597241951080" duration="1078000" />
-      <workItem from="1597246604551" duration="6356000" />
-      <workItem from="1597275730067" duration="162000" />
+      <workItem from="1597246604551" duration="3923000" />
+      <workItem from="1597275893645" duration="7839000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -242,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597186291533</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Rework site">
+      <created>1597279737480</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597279737480</updated>
+    </task>
+    <task id="LOCAL-00004" summary="link to new app">
+      <created>1597283674977</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597283674977</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,28 +138,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Commit" />
+    <MESSAGE value="Rework site" />
+    <MESSAGE value="link to new app" />
+    <option name="LAST_COMMIT_MESSAGE" value="link to new app" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275120649">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597275120649" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1597275890027">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597275913518" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1597186198464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597275890027" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1597273783070">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597186198464" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1597272533030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597273783070" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597186345541">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597272533030" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597283686470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597186345541" />
-    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1597275835250">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597275835250" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597283686470" />
   </component>
 </project>

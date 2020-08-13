@@ -1,0 +1,15 @@
+.chang {
+    color: white;
+}
+
+.chang2 {
+   background-color:rgba(0, 0, 0, 0.5);
+    padding: 3em;
+    border-radius: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.chang2 form {
+    margin-top: 2em;
+}
