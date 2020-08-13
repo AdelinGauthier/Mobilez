@@ -1,2 +1,0 @@
-{% load i18n %}
-{% blocktrans %}Votre adresse e-mail {{email}} a bien été modifiée.{% endblocktrans %}

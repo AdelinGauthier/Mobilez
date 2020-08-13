@@ -1,2 +1,0 @@
-{% load i18n %}
-{% blocktrans %}Le compte est déjà attaché à un autre compte.{% endblocktrans %}
