@@ -40,7 +40,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="link to new app" />
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="gallery urls">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +91,7 @@
       <workItem from="1597241951080" duration="1078000" />
       <workItem from="1597246604551" duration="3923000" />
       <workItem from="1597275893645" duration="7839000" />
+      <workItem from="1597425266649" duration="1381000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -118,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597283674977</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="gallery urls">
+      <created>1597425342460</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597425342460</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +150,8 @@
     <MESSAGE value="Test Commit" />
     <MESSAGE value="Rework site" />
     <MESSAGE value="link to new app" />
-    <option name="LAST_COMMIT_MESSAGE" value="link to new app" />
+    <MESSAGE value="gallery urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="gallery urls" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">
@@ -155,9 +166,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597272533030" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597283686470">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597425346696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597283686470" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597425346696" />
   </component>
 </project>
