@@ -19,3 +19,6 @@ def accueil_detail(request, pk):
     }
     return render(request, 'accueil/index_detail.html', context)
 
+def gallery(request):
+    return render(request, 'accueil/gallery.html')
+
