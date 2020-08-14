@@ -6,4 +6,5 @@ urlpatterns = [
     path('', views.accueil_index, name="accueil"),
     # mobilez.be/accueil/#numeroPK
     path("<int:pk>/", views.accueil_detail, name="accueil_detail"),
+    path('gallery/', views.gallery, name="gallery"),
 ]
