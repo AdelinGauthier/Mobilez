@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <body>
-Image ajoutée avec succès
+<script type="text/javascript">
+        setTimeout(function() {
+            window.location.href = "{% url 'gallery' %}";
+        }, 3000);
+    </script>
+<h1 class="titleGal">Image ajoutée avec succès !</h1>
 </body>
 </html>
 

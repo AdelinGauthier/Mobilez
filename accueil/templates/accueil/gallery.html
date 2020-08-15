@@ -10,19 +10,19 @@
 
 
 
-for item in gallery
+{% for photo in GalleryPhoto %}
 
     <div class="img-box">
-      <img src="https://picsum.photos/350/250?image=444" alt="" />
+      <img src="{{ photo.images.url }}" alt="" />
       <div class="transparent-box">
         <div class="caption">
-          <p>Library</p>
+          <p>{{ photo.title }}</p>
         </div>
       </div>
     </div>
 
 
- endfor
+    {% endfor %}
 
   </div>
 {% endblock %}

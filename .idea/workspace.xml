@@ -40,15 +40,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="prepa template and rebase statics">
-      <change afterPath="$PROJECT_DIR$/accueil/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accueil/templates/accueil/addPict.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accueil/templates/accueil/success.html" afterDir="false" />
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="back-end upload&#10;urls, views, forms">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/Mobilez/static/css/gallery.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accueil/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +100,7 @@
       <workItem from="1597275893645" duration="7839000" />
       <workItem from="1597425266649" duration="1381000" />
       <workItem from="1597427843828" duration="1560000" />
-      <workItem from="1597497205824" duration="7646000" />
+      <workItem from="1597497205824" duration="10229000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -163,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597514704234</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="back-end upload&#10;urls, views, forms">
+      <created>1597517560143</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597517560143</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +191,8 @@
     <MESSAGE value="gallery page" />
     <MESSAGE value="gallery page django test" />
     <MESSAGE value="prepa template and rebase statics" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepa template and rebase statics" />
+    <MESSAGE value="back-end upload&#10;urls, views, forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="back-end upload&#10;urls, views, forms" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">

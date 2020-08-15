@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from accueil.models import Accueil
 from django.http import HttpResponse
 from .forms import *
+from .models import GalleryPhotos
 
 
 def accueil_index(request):
@@ -23,11 +24,16 @@ def accueil_detail(request, pk):
 
 
 def gallery(request):
-    return render(request, 'accueil/gallery.html')
+    if request.method == 'GET':
+        # getting all the objects of hotel.
+        GalleryPhoto = GalleryPhotos.objects.all()
+        return render(request, 'accueil/gallery.html',
+                      {'GalleryPhoto': GalleryPhoto})
 
 
 def success(request):
     return render(request, 'accueil/success.html')
+
 
 def addPicture(request):
     if request.method == 'POST':
@@ -39,6 +45,3 @@ def addPicture(request):
     else:
         form = GalleryForm()
     return render(request, 'accueil/addPict.html', {'form': form})
-
-
-
