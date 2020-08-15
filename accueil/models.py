@@ -22,3 +22,9 @@ class Accueil(models.Model):
 
     def __unicode__(self):
         return self.title
+
+
+class GalleryPhotos(models.Model):
+    title = models.CharField(max_length=254)
+    images = models.ImageField(upload_to='images/')
+

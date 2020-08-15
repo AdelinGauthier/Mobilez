@@ -40,12 +40,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="gallery page django test">
-      <change afterPath="$PROJECT_DIR$/Mobilez/static/css/gallery.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mobilez/static/js/gallery.js" afterDir="false" />
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="prepa template and rebase statics">
+      <change afterPath="$PROJECT_DIR$/accueil/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accueil/templates/accueil/addPict.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accueil/templates/accueil/success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/Mobilez/static/css/gallery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +62,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -101,7 +105,7 @@
       <workItem from="1597275893645" duration="7839000" />
       <workItem from="1597425266649" duration="1381000" />
       <workItem from="1597427843828" duration="1560000" />
-      <workItem from="1597497205824" duration="4877000" />
+      <workItem from="1597497205824" duration="7646000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -152,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597511758691</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="prepa template and rebase statics">
+      <created>1597514704234</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597514704234</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +188,8 @@
     <MESSAGE value="gallery urls" />
     <MESSAGE value="gallery page" />
     <MESSAGE value="gallery page django test" />
-    <option name="LAST_COMMIT_MESSAGE" value="gallery page django test" />
+    <MESSAGE value="prepa template and rebase statics" />
+    <option name="LAST_COMMIT_MESSAGE" value="prepa template and rebase statics" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">
@@ -192,9 +204,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597272533030" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597428396411">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597514710059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597428396411" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597514710059" />
   </component>
 </project>

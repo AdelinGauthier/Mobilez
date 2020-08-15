@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+    <form method = "post" enctype="multipart/form-data" style="color:white">
+        {% csrf_token %}
+        {% load i18n %}
+            {% language 'fr' %}
+        {{ form.as_p }}
+        <button class="btn btn-info" type="submit">Ajouter une image</button>
+    </form>
+{% endlanguage %}
+</body>
+</html>
+{% endblock %}
