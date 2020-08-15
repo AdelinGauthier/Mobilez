@@ -13,7 +13,7 @@
 {% for photo in GalleryPhoto %}
 
     <div class="img-box">
-      <img src="{{ photo.images.url }}" alt="" />
+      <img src="{{ MEDIA_ROOT }}{{ photo.images.url }}" alt="" />
       <div class="transparent-box">
         <div class="caption">
           <p>{{ photo.title }}</p>

@@ -40,11 +40,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="back-end upload&#10;urls, views, forms">
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="displaying image">
+      <change afterPath="$PROJECT_DIR$/img/images/2.2_parc_scientifique_de_lln.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/images/Banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/images/Banner_w5Sg8l0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/images/Capture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/images/MuseeL_ext3JeanPierre_Bougnet.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobilez/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mobilez/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil/migrations/0002_auto_20200527_1650.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,10 +87,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Professionnel\PycharmProjects\Mobilez\img\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Professionnel\PycharmProjects\Mobilez\img\images" />
+      <recent name="C:\Users\Professionnel\PycharmProjects\Mobilez\img" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -100,7 +117,7 @@
       <workItem from="1597275893645" duration="7839000" />
       <workItem from="1597425266649" duration="1381000" />
       <workItem from="1597427843828" duration="1560000" />
-      <workItem from="1597497205824" duration="10229000" />
+      <workItem from="1597497205824" duration="13922000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -165,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597517560143</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="displaying image">
+      <created>1597526074501</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597526074501</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +216,8 @@
     <MESSAGE value="gallery page django test" />
     <MESSAGE value="prepa template and rebase statics" />
     <MESSAGE value="back-end upload&#10;urls, views, forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="back-end upload&#10;urls, views, forms" />
+    <MESSAGE value="displaying image" />
+    <option name="LAST_COMMIT_MESSAGE" value="displaying image" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">
