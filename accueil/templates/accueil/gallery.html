@@ -1,23 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="row" style="margin-top: 10%; margin-bottom: 10%">
-      <div class="col-md-12">
-          <h1 style="text-align: center; margin: 5%;">La gallerie de nos promeneurs</h1>
-        <div class="mdb-lightbox no-margin">
+<div class="gallery-image">
 
+for item in gallery
 
-            <figure class="col-md-4">
-            <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(121).jpg"
-              data-size="1600x1067">
-              <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(121).jpg"
-                class="img-fluid">
-              <h3 class="text-center my-3">Photo test</h3>
-            </a>
-          </figure>
-
-
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250?image=444" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Library</p>
         </div>
       </div>
     </div>
+
+
+ endfor
+
+  </div>
 {% endblock %}
