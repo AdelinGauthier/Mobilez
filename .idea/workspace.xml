@@ -40,18 +40,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="displaying image">
-      <change afterPath="$PROJECT_DIR$/img/images/2.2_parc_scientifique_de_lln.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/images/Banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/images/Banner_w5Sg8l0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/images/Capture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/images/MuseeL_ext3JeanPierre_Bougnet.jpeg" afterDir="false" />
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="test upload">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mobilez/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/migrations/0002_auto_20200527_1650.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/success.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +107,12 @@
       <workItem from="1597275893645" duration="7839000" />
       <workItem from="1597425266649" duration="1381000" />
       <workItem from="1597427843828" duration="1560000" />
-      <workItem from="1597497205824" duration="13922000" />
+      <workItem from="1597497205824" duration="14099000" />
+      <workItem from="1597620010932" duration="690000" />
+      <workItem from="1597667152956" duration="2652000" />
+      <workItem from="1597674166100" duration="673000" />
+      <workItem from="1597678996881" duration="28000" />
+      <workItem from="1597684609550" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -189,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597526074501</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test upload">
+      <created>1597529762453</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1597529762453</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +219,8 @@
     <MESSAGE value="prepa template and rebase statics" />
     <MESSAGE value="back-end upload&#10;urls, views, forms" />
     <MESSAGE value="displaying image" />
-    <option name="LAST_COMMIT_MESSAGE" value="displaying image" />
+    <MESSAGE value="test upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="test upload" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">
@@ -232,9 +235,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597272533030" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597514710059">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597529780264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597514710059" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597529780264" />
   </component>
 </project>
