@@ -40,8 +40,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="success page">
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="indent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobilez/static/css/gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/Mobilez/static/css/gallery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/socialaccount/snippets/login_extra.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/socialaccount/snippets/login_extra.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +116,9 @@
       <workItem from="1597678996881" duration="28000" />
       <workItem from="1597684609550" duration="143000" />
       <workItem from="1597687240204" duration="7000" />
+      <workItem from="1597786712776" duration="42000" />
+      <workItem from="1598110698966" duration="4000" />
+      <workItem from="1598369556473" duration="1393000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -198,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597684677737</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="indent">
+      <created>1597786741384</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1597786741384</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +241,8 @@
     <MESSAGE value="displaying image" />
     <MESSAGE value="test upload" />
     <MESSAGE value="success page" />
-    <option name="LAST_COMMIT_MESSAGE" value="success page" />
+    <MESSAGE value="indent" />
+    <option name="LAST_COMMIT_MESSAGE" value="indent" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">
@@ -243,9 +257,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597272533030" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597684681676">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597786746020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597684681676" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597786746020" />
   </component>
 </project>

@@ -10,10 +10,10 @@ body {
 }
 
 .gallery-image {
-  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 10%;
 }
 
 .gallery-image img {
