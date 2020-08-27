@@ -40,12 +40,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="debug migrations">
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="confirm email + colors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mobilez/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/email_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/email_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/verification_sent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/verification_sent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/account/verified_email_required.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/verified_email_required.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +118,7 @@
       <workItem from="1598110698966" duration="4000" />
       <workItem from="1598369556473" duration="4004000" />
       <workItem from="1598530953379" duration="12174000" />
-      <workItem from="1598547257385" duration="4329000" />
+      <workItem from="1598547257385" duration="9092000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -284,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598550626262</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="confirm email + colors">
+      <created>1598551871172</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1598551871172</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +327,8 @@
     <MESSAGE value="resolve error mysql" />
     <MESSAGE value="debug smtp" />
     <MESSAGE value="debug migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug migrations" />
+    <MESSAGE value="confirm email + colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="confirm email + colors" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">
@@ -338,9 +343,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598546066181" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598550632048">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598551883212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598550632048" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598551883212" />
   </component>
 </project>
