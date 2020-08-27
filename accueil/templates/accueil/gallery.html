@@ -5,7 +5,7 @@
     <a class="btn btn-info" href="{% url 'addPic' %}" role="button" style="margin: 5%;">Ajouter une photo</a>
 <div class="gallery-image">
 {% for photo in GalleryPhoto %}
-    <a class="img-box" href="{{ accueil.pk }}">
+    <a class="img-box" href="{% url 'accueil_detail' photo.pk %}" style="color: white">
       <img src="{{ MEDIA_ROOT }}{{ photo.images.url }}" alt=""/>
       <div class="transparent-box">
         <div class="caption">

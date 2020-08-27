@@ -11,9 +11,7 @@ def accueil_index(request):
     # effectue une requete
     accueil = Accueil.objects.all()
     # send info to our template
-    context = {
-        'accueil': accueil
-    }
+    context = {'accueil': accueil}
     return render(request, 'accueil/index.html', context)
 
 
