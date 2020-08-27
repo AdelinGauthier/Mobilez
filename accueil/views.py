@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.urls import reverse
+
 from accueil.models import Accueil
 from django.http import HttpResponse
 from .forms import *
@@ -17,18 +19,15 @@ def accueil_index(request):
 
 def accueil_detail(request, pk):
     accueil = Accueil.objects.get(pk=pk)
-    context = {
-        'accueil': accueil
-    }
+    context = {'accueil': accueil}
     return render(request, 'accueil/index_detail.html', context)
 
 
 def gallery(request):
     if request.method == 'GET':
-        # getting all the objects of hotel.
         GalleryPhoto = GalleryPhotos.objects.all()
-        return render(request, 'accueil/gallery.html',
-                      {'GalleryPhoto': GalleryPhoto})
+        context = {'GalleryPhoto': GalleryPhoto}
+        return render(request, 'accueil/gallery.html', context)
 
 
 def success(request):

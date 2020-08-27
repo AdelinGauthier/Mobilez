@@ -27,6 +27,6 @@ class Accueil(models.Model):
 
 
 class GalleryPhotos(models.Model):
-    title = models.CharField(max_length=254)
+    title = models.CharField(max_length=254, default="")
     images = models.ImageField(upload_to='images/')
-    parcours = models.ForeignKey(Accueil, on_delete=models.CASCADE)
+    parcours = models.ForeignKey(Accueil, on_delete=models.CASCADE, verbose_name='Le parcours')

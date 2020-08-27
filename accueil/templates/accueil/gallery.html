@@ -5,14 +5,14 @@
     <a class="btn btn-info" href="{% url 'addPic' %}" role="button" style="margin: 5%;">Ajouter une photo</a>
 <div class="gallery-image">
 {% for photo in GalleryPhoto %}
-    <div class="img-box" onclick="window.location.href = {{ accueil.pk }}">
+    <a class="img-box" href="{{ accueil.pk }}">
       <img src="{{ MEDIA_ROOT }}{{ photo.images.url }}" alt=""/>
       <div class="transparent-box">
         <div class="caption">
           <p>{{ photo.title }}</p>
         </div>
       </div>
-    </div>
+    </a>
     {% endfor %}
   </div>
 {% endblock %}
