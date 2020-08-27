@@ -1,26 +1,26 @@
 {% extends 'base.html' %}<!-- Se base sur le template de base et insère dedans ce qui suit -->
 {% block content %}
-    {% if user.is_authenticated %}
-    {% load static %}
-    <section class="accueilTitle">
+{% if user.is_authenticated %}
+{% load static %}
+<section class="accueilTitle">
     <h1>Les parcours</h1></br>
     <p>Choisissez un des parcours de découverte des arbres remarquables :</p></br>
-    </section>
+</section>
     {# ---------------------------------LISTE DES PARCOURS---------------------------------------#}
-    <div class="list-group">
-        {% for accueil in accueil %}
-            <a href="#{{ accueil.pk }}" class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="modal" >
-                <div class="d-flex w-100 justify-content-between">
-                    <h3 class="mb-1">{{ accueil.title }}</h3>
+<div class="list-group">
+    {% for accueil in accueil %}
+        <a href="#{{ accueil.pk }}" class="list-group-item list-group-item-action flex-column align-items-start" data-toggle="modal" >
+            <div class="d-flex w-100 justify-content-between">
+                <h3 class="mb-1">{{ accueil.title }}</h3>
                     {# <small>3 days ago</small>#}
-                </div>
-                <div class="d-flex flex-column bd-highlight mb-3">
-                  <div class="p-2"><img class="rounded-pill" src="{% if accueil.image %} {{ accueil.image.url }} {% endif %}" width="200" height="200" alt="{{ accueil.title }}"></div>
-                    <div class="p-2"><p class="mb-1">{{ accueil.resume }}</p></div>
-                    <div class="p-2"><p class="mb-1">{{ accueil.description }}</p></div>
-                </div>
+            </div>
+            <div class="d-flex flex-column bd-highlight mb-3">
+              <div class="p-2"><img class="rounded-pill" src="{% if accueil.image %} {{ accueil.image.url }} {% endif %}" width="200" height="200" alt="{{ accueil.title }}"></div>
+                 <div class="p-2"><p class="mb-1">{{ accueil.resume }}</p></div>
+                 <div class="p-2"><p class="mb-1">{{ accueil.description }}</p></div>
+            </div>
 
-            </a>
+        </a>
             {#    Modal 1 #}
             <div class="modal fade" id="{{ accueil.pk }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
