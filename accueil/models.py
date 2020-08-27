@@ -24,7 +24,9 @@ class Accueil(models.Model):
         return self.title
 
 
+
+
 class GalleryPhotos(models.Model):
     title = models.CharField(max_length=254)
     images = models.ImageField(upload_to='images/')
-
+    parcours = models.ForeignKey(Accueil, on_delete=models.CASCADE)
