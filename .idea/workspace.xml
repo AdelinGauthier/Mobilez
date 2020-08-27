@@ -40,9 +40,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="confirm email + colors">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/accueil/templates/accueil/gallery.html" afterDir="false" />
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="index loop">
+      <change beforePath="$PROJECT_DIR$/Mobilez/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mobilez/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +117,7 @@
       <workItem from="1598110698966" duration="4000" />
       <workItem from="1598369556473" duration="4004000" />
       <workItem from="1598530953379" duration="12174000" />
-      <workItem from="1598547257385" duration="9092000" />
+      <workItem from="1598547257385" duration="9479000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -288,7 +287,35 @@
       <option name="project" value="LOCAL" />
       <updated>1598551871172</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="gallery final">
+      <created>1598569710335</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1598569710335</updated>
+    </task>
+    <task id="LOCAL-00026" summary="success indent">
+      <created>1598569777726</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1598569777726</updated>
+    </task>
+    <task id="LOCAL-00027" summary="details map">
+      <created>1598569821126</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1598569821126</updated>
+    </task>
+    <task id="LOCAL-00028" summary="index loop">
+      <created>1598570044567</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1598570044567</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +355,11 @@
     <MESSAGE value="debug smtp" />
     <MESSAGE value="debug migrations" />
     <MESSAGE value="confirm email + colors" />
-    <option name="LAST_COMMIT_MESSAGE" value="confirm email + colors" />
+    <MESSAGE value="gallery final" />
+    <MESSAGE value="success indent" />
+    <MESSAGE value="details map" />
+    <MESSAGE value="index loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="index loop" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">
@@ -343,9 +374,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598546066181" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598551883212">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598569829244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598551883212" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598569829244" />
   </component>
 </project>
