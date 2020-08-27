@@ -7,7 +7,7 @@ from allauth.account import views as allauth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', LoginView.as_view(), name="login"),
+    path('accounts/login/', LoginView.as_view(), name="login"),
     path('confirmEmail/', ConfirmEmailView.as_view(), name="account_confirm_email"),
     path('', include('allauth.urls')),
     path('', allauth_views.login, name="account_login"),

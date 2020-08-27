@@ -40,9 +40,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="resolve error mysql">
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="debug migrations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mobilez/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mobilez/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mobilez/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mobilez/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/email_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/email_confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/verification_sent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/verification_sent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/verified_email_required.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/verified_email_required.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +121,7 @@
       <workItem from="1598110698966" duration="4000" />
       <workItem from="1598369556473" duration="4004000" />
       <workItem from="1598530953379" duration="12174000" />
-      <workItem from="1598547257385" duration="1575000" />
+      <workItem from="1598547257385" duration="4329000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -267,7 +270,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598547987224</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="debug smtp">
+      <created>1598548951018</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1598548951018</updated>
+    </task>
+    <task id="LOCAL-00023" summary="debug migrations">
+      <created>1598550626262</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1598550626262</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +321,9 @@
     <MESSAGE value="map redirection final" />
     <MESSAGE value="heroku upload update" />
     <MESSAGE value="resolve error mysql" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolve error mysql" />
+    <MESSAGE value="debug smtp" />
+    <MESSAGE value="debug migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug migrations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">
@@ -319,9 +338,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598546066181" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598547991671">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598550632048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598547991671" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598550632048" />
   </component>
 </project>
