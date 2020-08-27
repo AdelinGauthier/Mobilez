@@ -40,8 +40,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="map redirection final">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="76e0c33b-85ec-4f65-9776-b74e1a7cee06" name="Default Changelist" comment="heroku upload update">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,7 @@
       <workItem from="1597786712776" duration="42000" />
       <workItem from="1598110698966" duration="4000" />
       <workItem from="1598369556473" duration="4004000" />
-      <workItem from="1598530953379" duration="9744000" />
+      <workItem from="1598530953379" duration="9809000" />
     </task>
     <task id="LOCAL-00001" summary="Test Commit">
       <created>1597186043351</created>
@@ -237,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598541465452</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="heroku upload update">
+      <created>1598544730176</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1598544730176</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +279,8 @@
     <MESSAGE value="add redirect to map" />
     <MESSAGE value="map redirection" />
     <MESSAGE value="map redirection final" />
-    <option name="LAST_COMMIT_MESSAGE" value="map redirection final" />
+    <MESSAGE value="heroku upload update" />
+    <option name="LAST_COMMIT_MESSAGE" value="heroku upload update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597275913518">
@@ -287,9 +295,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598534889273" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598539780472">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598544755169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598539780472" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598544755169" />
   </component>
 </project>

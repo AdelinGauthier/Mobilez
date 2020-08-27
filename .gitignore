@@ -5,7 +5,6 @@
 __pycache__
 db.sqlite3
 media
-/Mobilez/settings.py
 .idea/
 # Backup files #
 *.bak
@@ -114,5 +113,4 @@ GitHub.sublime-settings
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history"/Mobilez/settings.py" 
-"/Mobilez/settings.py" 
+.history"/Mobilez/settings.py"
