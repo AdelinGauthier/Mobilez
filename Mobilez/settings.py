@@ -102,8 +102,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = DEFAULT_FROM_EMAIL = 'noreplymobilez@gmail.com'
-EMAIL_HOST_PASSWORD = 'Temporary72!'
+EMAIL_HOST_USER = DEFAULT_FROM_EMAIL = 'noreplymobilezcontact@gmail.com'
+EMAIL_HOST_PASSWORD = 'Mobilez//2'
 
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 
