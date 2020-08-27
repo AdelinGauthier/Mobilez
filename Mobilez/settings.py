@@ -29,7 +29,7 @@ SECRET_KEY = '57*v-0+h89@x1*s6=5(w0naa)@5_*7zp=k_^i0z#73kp-)wl!@'
 DEBUG = 'TRUE'
 
 ALLOWED_HOSTS = []
-#ALLOWED_HOSTS = ['mobilez.herokuapp.com', 'localhost']
+# ALLOWED_HOSTS = ['mobilez.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -97,7 +97,6 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 2
 
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_USE_TLS = True
@@ -160,25 +159,24 @@ WSGI_APPLICATION = 'Mobilez.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'DB_NAME',
         'USER': 'DB_USER',
         'PASSWORD': 'DB_PASSWORD',
-        'HOST': 'localhost',   # Or an IP Address that your database is hosted on
+        'HOST': 'localhost',  # Or an IP Address that your database is hosted on
         'PORT': '3306',
-        #optional:
+        # optional:
         'OPTIONS': {
-            'charset' : 'utf8',
-            'use_unicode' : True,
-             'init_command': 'SET '
-                'storage_engine=INNODB,'
-                'character_set_connection=utf8,'
-                'collation_connection=utf8_bin'
-                #'sql_mode=STRICT_TRANS_TABLES,'    # see note below
-                #'SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
+            'charset': 'utf8',
+            'use_unicode': True,
+            'init_command': 'SET '
+                            'storage_engine=INNODB,'
+                            'character_set_connection=utf8,'
+                            'collation_connection=utf8_bin'
+            # 'sql_mode=STRICT_TRANS_TABLES,'    # see note below
+            # 'SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
         },
         'TEST_CHARSET': 'utf8',
         'TEST_COLLATION': 'utf8_general_ci',
@@ -220,7 +218,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/Mobilez/static/'
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 STATICFILES_DIRS = (
